@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../css/slider.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="../js/jquery-3.6.0.js"></script>
+  <title>Kotyata one love</title>
+</head>
+
+<body>
+  <div class="flex-container">
+    <header class="navbar">
+      <h1>Котятки ♥</h1>
+      <div class="search-box">
+        <input type="text" class="search-txt" placeholder="Поиск">
+        <a href="#" class="search-btn"></a>
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="menu">
+          <a href="#" class="menu-button" onclick="script()"><img class="menu-ico" src="../img/menu_ico.svg"
+              alt="menu"></a>
+          <nav class="menu-list">
+            <a href="../index.html">Мейн-кун</a>
+            <a href="./cat2.html">Сиамская кошка</a>
+            <a href="./cat3.html">Рэгдолл</a>
+            <a href="./cat4.html">Абиссинская кошка</a>
+            <a href="./cat5.html">Бирманская кошка</a>
+          </nav>
+        </div>
+      </aside>
+      <section class="main-box">
+        <div class="slider">
+
+          <!-- <img class="img" src="/static/avatar.jpg" alt="avatar"> -->
+          <div class="item">
+            <img src="../img/slide3_1.jpg" alt="Первый слайд">
+          </div>
+
+          <div class="item" style="display: block;">
+            <img src="../img/slide3_2.jpg" alt="Второй слайд">
+          </div>
+
+          <div class="item" style="display: block;">
+            <img src="../img/slide3_3.jpg" alt="Третий слайд">
+          </div>
+
+          <a class="prev" onclick="minusSlide()">&#10094;</a>
+          <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+
+        <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+          <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+          <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        </div>
+        <box>
+          <div class="box-1">
+          </div>
+          <div class="box-2">
+            <p class="main_text">
+              Одна из наиболее дружелюбных кошек — рэгдолл с воздушной шерстью — относительно новая порода, выведенная в
+              1960-е годы. По информации журнала Catster, свое причудливое имя (в переводе с англ. — «тряпичная кукла»)
+              рэгдоллы получили за привычку растягиваться на коленях у владельца и передвигаться по дому на руках у
+              хозяина, как маленький ребенок. Это прекрасный выбор для людей, проживающих в квартирах на небольшой
+              жилплощади, в том числе с детьми. Кошка рэгдолл очень ласковая и сильно привязывается к хозяину, поэтому
+              будет встречать вас у порога после работы и следовать за вами по всему дому.
+            </p>
+          </div>
+          <div class="box-3">
+          </div>
+        </box>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Dubna State University 2022 (C) L.N. Krylov</p>
+      <a href="https://t.me/Syppix" target="_blank"><img class="tg-ico" src="../img/telegram.png" alt="Telegram"></a>
+    </footer>
+  </div>
+  <script src="../js/script.js"></script>
+  <script src="../js/slider.js"></script>
+</body>
+
+
+</html>
